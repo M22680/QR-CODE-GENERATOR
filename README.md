@@ -1,2 +1,2 @@
 # QR-CODE-GENERATOR
-this is a QR code generator!
+This is a QR code generator!
