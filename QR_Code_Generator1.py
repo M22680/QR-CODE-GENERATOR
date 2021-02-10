@@ -1,6 +1,5 @@
 import tkinter
 import qrcode
-import time
 # Basic Code for tk
 app = tkinter.Tk()
 app.title("QR Code Generator")
