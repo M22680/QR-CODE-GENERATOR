@@ -16,7 +16,7 @@ def create_qr_code(to_save_in_qr, filename):
     print("jo ein qrcode wurde erstellt")
 
 # Get the link and the filename from the input field 
-def link_zuweisung():
+def link_assignment():
     global to_save_in_qr2
     global filename
     to_save_in_qr2= link_input.get()
@@ -24,10 +24,10 @@ def link_zuweisung():
     filename= filename_input.get()
 
 # Assignment button       OkButton 
-der_assignment_button= tkinter.Button(app, width=20,height=1, text="ok", bg="Orange", command=  
-lambda:[link_zuweisung(), 
+assignment_button= tkinter.Button(app, width=20,height=1, text="ok", bg="Orange", command=  
+lambda:[link_assignment(), 
 create_qr_code(to_save_in_qr2, filename)])
-der_assignment_button.place(x=172, y=286)
+assignment_button.place(x=172, y=286)
 # Input Link 
 link_input= tkinter.Entry(app, bg="Pink", width=24, textvariable="link")
 link_input.delete(0, "end")
