@@ -11,13 +11,13 @@ app.minsize(width=300, height=300)
 
 def create_qr_code(to_save_in_qr, filename):
     qr = qrcode.QRCode(
-        version=1, error_correction=qrcode.ERROR_CORRECT_H, box_size=10, border=4,)
+        version=1, error_correction=qrcode.ERROR_CORRECT_H, box_size=30, border=2,)
     qr.add_data(to_save_in_qr)
     qr.make(fit=True)
     img = qr.make_image(fill_color="black",
                         back_color=color).convert('RGB')
     img.save(filename+".png")
-    time.sleep(3)
+    time.sleep(5)
     img.show()
     print("jo ein qrcode wurde erstellt")
 
